@@ -1,6 +1,6 @@
 import uuid from "react-uuid";
 
-const Work = () => {
+const Portfolio = () => {
   // {
   //     thumbnail:"",
   //     url:"",
@@ -48,14 +48,14 @@ const Work = () => {
   ];
 
   return (
-    <section id="work">
+    <section id="portfolio">
       <div className="section-heading">
-        <h1>Work</h1>
+        <h1>Portfolio</h1>
       </div>
       <div className="section-content">
         {jobs.map((j, i) => {
           return (
-            <SectionContent
+            <Project
               index={i}
               thumbnail={j.thumbnail}
               url={j.url}
@@ -69,7 +69,7 @@ const Work = () => {
   );
 };
 
-const SectionContent = ({ index, thumbnail, url, heading, description }) => {
+const Project = ({ index, thumbnail, url, heading, description }) => {
   return (
     <div
       key={uuid()}
@@ -88,4 +88,4 @@ const SectionContent = ({ index, thumbnail, url, heading, description }) => {
   );
 };
 
-export default Work;
+export default Portfolio;

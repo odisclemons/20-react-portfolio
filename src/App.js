@@ -1,13 +1,15 @@
 import Header from "./components/Header";
 import Bio from "./components/Bio";
-import Work from "./components/Work";
+import Portfolio from "./components/Portfolio";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
       <Header />
       <Bio />
-      <Work />
+      <Portfolio />
+      <Footer />
     </>
   );
 }
