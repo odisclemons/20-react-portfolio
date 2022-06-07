@@ -1,0 +1,269 @@
+:root {
+  --mainColor: #92cccd;
+  --mainColorRGB: 146, 204, 205;
+  --secColor: #31343d;
+  --thirdColor: #ededf6;
+  --mainColorDark: #445876;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+html {
+  font-size: 20px;
+  color: var(--mainColorDark);
+  background-color: var(--thirdColor);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secColor);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 50%;
+  margin: 1rem;
+  padding: 0.25rem;
+  color: var(--mainColor);
+}
+
+nav ul li {
+  margin: 0 0.25rem;
+  padding: 0.25rem;
+  border-bottom: 3px solid var(--mainColor);
+}
+
+nav h1 {
+  padding-left: 2rem !important;
+}
+
+nav img {
+  height: 90%;
+}
+
+.hlt {
+  color: var(--secColor);
+  background-color: var(--mainColor);
+  padding: 0.5rem;
+}
+
+.jt {
+  height: 12rem;
+  width: 100%;
+  background-color: black;
+  background-image: url("../img/arnold-francisca-f77Bh3inUpE-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.jt .green-cover {
+  background-color: rgba(var(--mainColorRGB), 0.3) !important;
+}
+.green-cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(var(--mainColorRGB), 0.55);
+  transition: 0.5s;
+}
+
+.green-cover:hover {
+  background-color: rgba(var(--mainColorRGB), 0.1);
+  transition: 0.5s;
+}
+
+#profile-pic {
+  height: 10rem;
+  width: 10rem;
+  margin-left: 2rem;
+  border-radius: 50%;
+  border: 5px solid rgba(var(--mainColorRGB), 0.5);
+  overflow: hidden;
+  background-image: url(../img/odis.jpg);
+  background-size: cover;
+  align-self: flex-start;
+  justify-self: center;
+  position: absolute;
+  bottom: 10%;
+}
+
+.jt h2 {
+  position: relative;
+  display: inline-block;
+  margin: 2rem;
+}
+
+.moreContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 1rem 0 auto;
+  background: linear-gradient(360deg, var(--thirdColor), transparent);
+  padding: 1rem;
+}
+
+.more {
+  background-color: var(--mainColor);
+  color: var(--mainColorDark);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  width: 100px;
+  cursor: pointer;
+}
+
+.centerStuff {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  display: flex;
+  margin: 1rem 0;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
+  transition: 0.5s;
+}
+
+.section-heading {
+  border-right: 5px solid var(--mainColorDark);
+  text-align: end;
+  padding: 1rem;
+  width: 30%;
+}
+
+.section-content {
+  position: relative;
+  padding: 1rem;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.section-content p {
+  margin: 1rem;
+}
+
+.gallery-box {
+  border: 5px solid var(--mainColor);
+  position: relative;
+  margin: 1rem 0;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.gallery-box-lg {
+  height: 20rem;
+  width: 100%;
+}
+
+.gallery-box-sm {
+  height: 10rem;
+  width: 49%;
+}
+
+.gallery-box-sm h1 {
+  font-size: 1.4rem;
+}
+
+.gallery-box-label {
+  background-color: var(--mainColor);
+  display: inline-block;
+  padding: 1rem;
+  min-width: 10rem;
+  max-width: 25%;
+  position: absolute;
+  bottom: 10%;
+}
+
+footer {
+  text-align: center;
+}
+
+footer nav {
+  width: 100%;
+  background-color: unset;
+}
+
+footer nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+  color: var(--mainColorDark);
+  max-width: unset;
+}
+
+footer nav ul li {
+  border-bottom-color: var(--mainColorDark);
+  margin-bottom: 0.1rem;
+}
+
+button {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+  /* tablets and desktop */
+  section {
+    flex-direction: column;
+  }
+
+  .section-heading {
+    width: 100%;
+    text-align: center;
+    border: none;
+    text-decoration: underline;
+    background: var(--mainColor);
+    padding: 0.5rem;
+  }
+
+  .section-content {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /* phones */
+  .gallery-box-lg {
+    height: 10rem;
+  }
+  .gallery-box-sm {
+    width: 100%;
+  }
+
+  .gallery-box-lg .gallery-box-label h1 {
+    font-size: 1rem;
+  }
+
+  .gallery-box .gallery-box-label h5 {
+    display: none;
+  }
+
+  section {
+    padding: 0.25rem;
+  }
+}
