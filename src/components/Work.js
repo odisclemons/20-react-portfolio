@@ -53,24 +53,27 @@ const Work = () => {
         <h1>Work</h1>
       </div>
       <div className="section-content">
-        {jobs.map((j) => (
-          <SectionContent
-            thumbnail={j.thumbnail}
-            url={j.url}
-            heading={j.heading}
-            description={j.description}
-          />
-        ))}
+        {jobs.map((j, i) => {
+          return (
+            <SectionContent
+              index={i}
+              thumbnail={j.thumbnail}
+              url={j.url}
+              heading={j.heading}
+              description={j.description}
+            />
+          );
+        })}
       </div>
     </section>
   );
 };
 
-const SectionContent = ({ thumbnail, url, heading, description }) => {
+const SectionContent = ({ index, thumbnail, url, heading, description }) => {
   return (
     <div
       key={uuid()}
-      className="gallery-box gallery-box-lg"
+      className={`gallery-box gallery-box-${index === 0 ? "lg" : "sm"}`}
       style={{ backgroundImage: `url(img/${thumbnail})` }}
       role="img"
       ariaLabel={`Image of ${description}`}
