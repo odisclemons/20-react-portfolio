@@ -1,7 +1,27 @@
+import react, { useRef, useState } from "react";
+
 const Bio = () => {
-  const handleToggle = () => {};
+  const sectionRef = useRef(null);
+  const [btnText, setBtnText] = useState(false);
+
+  const handleToggle = (section) => {
+    //get section from the dom
+    let sect = sectionRef.current;
+
+    //if the size of section over 500px, callapse to 500 px
+    if (sect.offsetHeight > 500) {
+      sect.style.height = "500px";
+      setBtnText("More");
+      window.location = `#${section}`;
+    } else {
+      //if section is 500px, it is collapsed.  set it to auto to expand full height
+      sect.style.height = "auto";
+      setBtnText("Less");
+    }
+  };
+
   return (
-    <section id="about" style={{ height: 500 }}>
+    <section ref={sectionRef} id="about" style={{ height: 500 }}>
       <div className="section-heading">
         <h1>About Me</h1>
       </div>
@@ -78,8 +98,12 @@ const Bio = () => {
           Javascript, the one man band.
         </p>
         <div className="centerStuff moreContainer">
-          <button className="more" id="aboutBtn" onClick={handleToggle}>
-            More
+          <button
+            className="more"
+            id="aboutBtn"
+            onClick={() => handleToggle("about")}
+          >
+            {btnText}
           </button>
         </div>
       </div>
