@@ -40,10 +40,10 @@ const Work = () => {
       description: "Plan your garden or entire farm with Planted.",
     },
     {
-      thumbnail: "",
-      url: "",
-      heading: "",
-      description: "",
+      thumbnail: "notetaker.webp",
+      url: "https://odis-11-note-taker.herokuapp.com/",
+      heading: "Note Taker",
+      description: "A simple app that allows notes in the browser.",
     },
   ];
 
