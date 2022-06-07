@@ -63,7 +63,7 @@ nav img {
   height: 12rem;
   width: 100%;
   background-color: black;
-  background-image: url("../images/arnold-francisca-f77Bh3inUpE-unsplash.jpg");
+  background-image: url("../img/arnold-francisca-f77Bh3inUpE-unsplash.jpg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -97,7 +97,7 @@ nav img {
   border-radius: 50%;
   border: 5px solid rgba(var(--mainColorRGB), 0.5);
   overflow: hidden;
-  background-image: url(../images/odis.jpg);
+  background-image: url(../img/odis.jpg);
   background-size: cover;
   align-self: flex-start;
   justify-self: center;
