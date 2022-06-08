@@ -66,6 +66,7 @@ nav img {
   background-image: url("../img/arnold-francisca-f77Bh3inUpE-unsplash.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -243,6 +244,11 @@ section {
 
 button {
   margin: 0 auto;
+}
+
+input,
+textarea {
+  border: 5px solid var(--mainColor);
 }
 
 @media only screen and (max-width: 768px) {

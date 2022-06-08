@@ -56,6 +56,7 @@ const Portfolio = () => {
         {jobs.map((j, i) => {
           return (
             <Project
+              key={uuid()}
               index={i}
               thumbnail={j.thumbnail}
               url={j.url}
@@ -72,11 +73,10 @@ const Portfolio = () => {
 const Project = ({ index, thumbnail, url, heading, description }) => {
   return (
     <div
-      key={uuid()}
       className={`gallery-box gallery-box-${index === 0 ? "lg" : "sm"}`}
       style={{ backgroundImage: `url(img/${thumbnail})` }}
       role="img"
-      ariaLabel={`Image of ${description}`}
+      aria-label={`Image of ${description}`}
       onClick={() => window.open(url, "_blank")}
     >
       <div className="green-cover"></div>
