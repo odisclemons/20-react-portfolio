@@ -2,7 +2,7 @@ import react, { useRef, useState } from "react";
 
 const Bio = () => {
   const sectionRef = useRef(null);
-  const [btnText, setBtnText] = useState(false);
+  const [btnText, setBtnText] = useState("More");
 
   const handleToggle = (section) => {
     //get section from the dom

@@ -17,7 +17,7 @@
   <body>
     <header>
       <nav>
-        <h1 class="hlt">Odis Clemons</h1>
+        <h1 className="hlt">Odis Clemons</h1>
 
         <ul>
           <li><a href="#about">About Me</a></li>
@@ -27,24 +27,24 @@
         </ul>
       </nav>
       <div
-        class="jt"
+        className="jt"
         role="img"
         aria-label="Jumbotron image of laptop with code displayed"
       >
-        <div class="green-cover"></div>
+        <div className="green-cover"></div>
         <div id="profile-pic" role="img" aria-label="profile picture of Odis">
           &nbsp;
         </div>
-        <h2 class="hlt">dreadHeadDev welcomes you!</h2>
+        <h2 className="hlt">dreadHeadDev welcomes you!</h2>
       </div>
     </header>
 
     <main>
       <section id="about" style="height: 500px">
-        <div class="section-heading">
+        <div className="section-heading">
           <h1>About Me</h1>
         </div>
-        <div class="section-content">
+        <div className="section-content">
           <p>
             I have had a love for computers since the age of 13. My high school
             was woefully outdated when it came to technology, but it worked in
@@ -118,8 +118,12 @@
             one language that can literally do it all: Web Assembly. Im joking;
             of course it's Javascript, the one man band.
           </p>
-          <div class="centerStuff moreContainer">
-            <button class="more" id="aboutBtn" onClick="toggleSection('about')">
+          <div className="centerStuff moreContainer">
+            <button
+              className="more"
+              id="aboutBtn"
+              onClick="toggleSection('about')"
+            >
               More
             </button>
           </div>
@@ -127,76 +131,76 @@
       </section>
 
       <section id="work">
-        <div class="section-heading">
+        <div className="section-heading">
           <h1>Work</h1>
         </div>
-        <div class="section-content">
+        <div className="section-content">
           <!-- gallery-boxes -->
           <div
-            class="gallery-box gallery-box-lg"
+            className="gallery-box gallery-box-lg"
             style="background-image: url(./assets/images/nha.webp)"
             role="img"
             aria-label="Image of NHA Main Website"
             onClick="window.open('https://newarkha.org', '_blank')"
           >
-            <div class="green-cover"></div>
-            <div class="gallery-box-label">
+            <div className="green-cover"></div>
+            <div className="gallery-box-label">
               <h1>Newark Housing Authority</h1>
               <h5>My first large web project.</h5>
             </div>
           </div>
 
           <div
-            class="gallery-box gallery-box-sm"
+            className="gallery-box gallery-box-sm"
             style="background-image: url(./assets/images/nhasf2.webp)"
             role="img"
             aria-label="Image of NHA Scholarship Foundation Website"
             onClick="window.open('https://nhasf.newarkha.org', '_blank')"
           >
-            <div class="green-cover"></div>
-            <div class="gallery-box-label">
+            <div className="green-cover"></div>
+            <div className="gallery-box-label">
               <h1>NHASF</h1>
               <h5>NHA Scholarship Foundation.</h5>
             </div>
           </div>
 
           <div
-            class="gallery-box gallery-box-sm"
+            className="gallery-box gallery-box-sm"
             style="background-image: url(./assets/images/kkd.webp)"
             role="img"
             aria-label="Image of Kim's Kreative Designs Website"
             onClick="window.open('https://kimskreativedesigns.com', '_blank')"
           >
-            <div class="green-cover"></div>
-            <div class="gallery-box-label">
+            <div className="green-cover"></div>
+            <div className="gallery-box-label">
               <h1>Kim's Kreative Designs</h1>
               <h5>My cousin's business site.</h5>
             </div>
           </div>
 
           <div
-            class="gallery-box gallery-box-sm"
+            className="gallery-box gallery-box-sm"
             style="background-image: url(./assets/images/routemyday.webp)"
             role="img"
             aria-label="Image of route my day project"
             onClick="window.open('https://odisclemons.github.io/route-my-day/', '_blank')"
           >
-            <div class="green-cover"></div>
-            <div class="gallery-box-label">
+            <div className="green-cover"></div>
+            <div className="gallery-box-label">
               <h1>Route My Day</h1>
               <h5>Project for UCF bootcamp.</h5>
             </div>
           </div>
 
           <div
-            class="gallery-box gallery-box-sm"
+            className="gallery-box gallery-box-sm"
             style="background-image: url(./assets/images/planted.webp)"
             role="img"
             aria-label="Image of route my day project"
             onClick="window.open('https://agile-wildwood-01808.herokuapp.com/', '_blank')"
           >
-            <div class="green-cover"></div>
-            <div class="gallery-box-label">
+            <div className="green-cover"></div>
+            <div className="gallery-box-label">
               <h1>Planted</h1>
               <h5>Plan your garden or entire farm with Planted.</h5>
             </div>
@@ -209,10 +213,10 @@
 
     <footer>
       <section id="contact">
-        <div class="section-heading">
+        <div className="section-heading">
           <h1>Contact Me</h1>
         </div>
-        <div class="section-content">
+        <div className="section-content">
           <nav>
             <ul>
               <li><a href="tel:555-555-555">555-555-555</a></li>

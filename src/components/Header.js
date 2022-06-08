@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header>
       <nav>
-        <h1 class="hlt">Odis Clemons</h1>
+        <h1 className="hlt">Odis Clemons</h1>
 
         <ul>
           <li>
@@ -22,15 +22,15 @@ const Header = () => {
         </ul>
       </nav>
       <div
-        class="jt"
+        className="jt"
         role="img"
         aria-label="Jumbotron image of laptop with code displayed"
       >
-        <div class="green-cover"></div>
+        <div className="green-cover"></div>
         <div id="profile-pic" role="img" aria-label="profile picture of Odis">
           &nbsp;
         </div>
-        <h2 class="hlt">dreadHeadDev welcomes you!</h2>
+        <h2 className="hlt">dreadHeadDev welcomes you!</h2>
       </div>
     </header>
   );
