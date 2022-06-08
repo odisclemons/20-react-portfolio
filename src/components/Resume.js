@@ -4,16 +4,20 @@ const Resume = () => {
       <div className="section-heading">
         <h1>Resume</h1>
       </div>
-      <div className="section-content">
-        <div className="centerStuff moreContainer">
-          <button
-            className="more"
-            id="aboutBtn"
-            onClick={() => (window.location = "docs/resume.pdf")}
-          >
-            Download Resume
-          </button>
-        </div>
+      <div
+        className="section-content"
+        style={{ justifyContent: "center", alignItems: "center" }}
+      >
+        <button
+          className="more"
+          id="aboutBtn"
+          style={{ width: "auto" }}
+          onClick={() =>
+            window.open("docs/OdisClemonsResume-6-2022.pdf", "_blank")
+          }
+        >
+          Download Resume
+        </button>
       </div>
     </section>
   );

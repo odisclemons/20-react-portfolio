@@ -54,6 +54,7 @@ const Contact = () => {
             name="message"
             defaultValue={state.message}
             onChange={handleChange}
+            placeholder="Type me a message, but keep it classy..."
           ></textarea>
           <input type="submit" value="Send" />
         </form>
